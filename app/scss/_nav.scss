@@ -1,0 +1,56 @@
+/* Scss Document */
+.flex-nav{
+	
+   	display:flex;
+	justify-content:center;
+	background-color:#371A10;
+	margin:10px;
+	flex-direction:column;
+	
+	
+	
+		
+	 ul{
+	
+	list-style: none;
+	width:100%;
+	margin: 1px;
+	 }
+		
+	li {
+	
+	margin:1px;
+	text-align:center;
+	border:1PX solid #9722DC;
+	
+	
+	}
+	
+	
+	@media screen and (min-width:800px){
+	flex-direction:row;
+
+	}
+	
+	
+	}
+
+	
+
+
+
+a {
+	color: #FFFFFF;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 600;
+	display: inline-block;
+	transition: all 1s;
+	width:100%;
+	height:100%;
+	&:hover {
+	background:#B36711;
+	}
+	}
+

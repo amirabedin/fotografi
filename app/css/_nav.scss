@@ -1,0 +1,95 @@
+nav  {
+    display: none;
+    
+    
+    ul {
+        display: flex;
+        margin: 0; 
+        padding: 0;
+        border-bottom: 1px solid #CCCCCC;
+        flex-flow: column wrap; /* Viktigt */    
+        }
+    li{ 
+        
+        width: 100%;
+        height: 30px;
+        
+        &:hover{background-color: $prim-color +30;}
+      }
+    a {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        font-family: Arial;
+        font-weight: bold; 
+        width: 100%;
+        height: 100%;  
+        text-decoration: none;
+        
+        }    
+   
+    
+        @media screen and ($desktop-width){
+            display: flex;
+            min-width: 200px;
+            border-right: 1px solid black;  
+            
+            
+                        ul {
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        padding-top: 10px;
+                        flex-flow: column wrap; /* Viktigt */    
+                        }
+                        li{
+                        width: 100%;
+                        height: 40px;
+                                                }
+
+                        }         
+    }
+
+
+
+.fa-times,
+.fa-bars {
+  color: #000000;
+  font-size: 2em;
+  padding: 1em;
+}
+/* Döljer checkboxen för menyn*/
+#nav-toggle {
+  display: none;
+}
+/* hide box on desktop */
+@media screen and ($desktop-width){
+    #nav-toggle,
+    header .fa-bars{
+    display: none;
+    }
+}
+/* Döljer Font icon Krysset i default läge */
+#nav-toggle,
+header .fa-times {
+  display: none;
+}
+/* Visar menu för  mobil i när checkboxen är checked läge */
+#nav-toggle:checked + .wrapper nav {
+  display: block;
+}
+/* Döljer font icon Bar när checkboxen är checked läge */
+#nav-toggle:checked + .wrapper header .fa-bars {
+  display: none;
+}
+/* Visar font icon krysset när checkboxen är i checked läge */
+#nav-toggle:checked + .wrapper header .fa-times {
+  display: block;
+        @media screen and ($desktop-width){
+        display: none;
+        }
+}
+
+
+
+
